@@ -21,11 +21,11 @@ chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
 
 # In[2]:
-
+s=Service(ChromeDriverManager().install())
 
 # Use WebDriver to open a Chrome tab and navigate to Instagram login page
-chromedriver_path = "/usr/bin/chromedriver"
-webdriver = webdriver.Chrome(executable_path = chromedriver_path)
+# chromedriver_path = "/usr/bin/chromedriver"
+webdriver = webdriver.Chrome(service=s)
 webdriver.get("https://www.instagram.com/accounts/login")
 sleep(1)
 
