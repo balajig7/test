@@ -12,7 +12,7 @@ from random import randint
 import pandas as pd
 from selenium.webdriver.common.by import By
 import time
-
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 
 chrome_options = Options()
