@@ -18,7 +18,7 @@ import time
 
 
 # Use WebDriver to open a Chrome tab and navigate to Instagram login page
-chromedriver_path = "/usr/lib/chromium-browser/chromedriver"
+chromedriver_path = "/usr/bin/chromedriver"
 webdriver = webdriver.Chrome(executable_path = chromedriver_path)
 webdriver.get("https://www.instagram.com/accounts/login")
 sleep(1)
